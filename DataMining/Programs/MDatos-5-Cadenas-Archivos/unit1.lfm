@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 350
+  Height = 449
+  Top = 250
+  Width = 621
+  Caption = 'Form1'
+  ClientHeight = 449
+  ClientWidth = 621
+  Menu = MainMenu1
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 40
+    Width = 176
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Mayúsculas'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 125
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Palindromo? '
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Memo1: TMemo
+    Left = 304
+    Height = 160
+    Top = 208
+    Width = 272
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 8
+    Width = 36
+    Caption = 'Tarea 1'
+  end
+  object Edit2: TEdit
+    Left = 24
+    Height = 23
+    Top = 152
+    Width = 448
+    TabOrder = 4
+    Text = 'Edit2'
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 128
+    Width = 39
+    Caption = 'Arreglo'
+  end
+  object Button3: TButton
+    Left = 24
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Generar'
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 120
+    Height = 25
+    Top = 200
+    Width = 80
+    Caption = 'Ordenar'
+    TabOrder = 6
+    OnClick = Button4Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 96
+    Top = 368
+    object MenuItem1: TMenuItem
+      Caption = 'Archivo'
+      object MenuItem2: TMenuItem
+        Caption = 'Abrir Memo'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Abrir progamador'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Escribe archivo'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Guardar como...'
+        OnClick = MenuItem6Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'MenuItem4'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.txt|*.txt'
+    Left = 48
+    Top = 368
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = '*.txt|*.txt'
+    Left = 8
+    Top = 368
+  end
+end
