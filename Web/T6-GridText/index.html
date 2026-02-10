@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Primer cuadrante 50%-50% normal stack en small-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 bg-primary">
+                <p>Lorem ipsum...</p>
+            </div>
+            <div class="col-sm-6 bg-dark">
+                <p>Sed ut perspiciatis...</p>
+            </div>
+        </div>
+    </div>
+    <!--2do cuadrante 50%-50% normal invertido en small-->
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 order-last order-sm-first" style="background-color:yellow">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <div class="col-6 order-first order-sm-last" style="background-color:purple">
+                <p>Sed ut perspiciatis...</p>
+            </div>
+        </div>
+    </div>
+    <!--tercer cuadrante-->
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class =" col-3 col-sm-9" style="background-color: #21D4DE ;">col-6 col-sm-9</div>
+        <div class="col-9 col-sm-3" style="background-color: #21DE68">col-6 col-sm-3</div>
+    </div>
+    </div>
+    <!--cuarto cuadrante-->
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 d-none d-sm-block" style="background-color: pink">
+                col-6 col-sm-3
+            </div>
+
+            <div class="col-5 col-sm-4" style="background-color: black; color: white;">
+                col-6 col-sm-9
+            </div>
+
+            <div class="col-7 col-sm-6" style="background-color: #DE5421">
+                col-6 col-sm-3
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
